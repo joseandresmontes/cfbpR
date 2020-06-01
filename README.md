@@ -6,7 +6,7 @@ ___
 Install the latest version from github as follows.
 
 ```
-devtools::install_github('JoseAndresMontes/cfpbR')
+devtools::install_github('JoseAndresMontes/cfbpR')
 ```
 
 The API is open data that requires no credentials to access. This API client has set up supported parameters to output an R friendly version of the available data.
