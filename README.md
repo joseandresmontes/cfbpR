@@ -1,4 +1,4 @@
-# cfbpR
+# cfpbR
 The Consumer Financial Protection Bureau (CFPB) regulates the offering and provision of consumer financial products or services under the federal consumer financial laws and educates and empowers consumers to make better informed financial decisions.
 ___
 
@@ -6,7 +6,7 @@ ___
 Install the latest version from github as follows.
 
 ```
-devtools::install_github('JoseAndresMontes/cfbpR')
+devtools::install_github('JoseAndresMontes/cfpbR')
 ```
 
 The API is open data that requires no credentials to access. This API client has set up supported parameters to output an R friendly version of the available data.
