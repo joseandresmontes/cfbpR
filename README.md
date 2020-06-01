@@ -20,3 +20,6 @@ For example:
 ```
 data <- GetConsumerComplaints()
 ```
+
+## Disclaimer
+This R API client was developed independently and is not related directly to any project of the agency. Issues should not be directed to the agency, but instead be directly posted on this repository.
