@@ -31,10 +31,19 @@ GetConsumerComplaints <- function(before=NULL, after=NULL, limit = 20)
   )
   #request response with specified parameters
   parameter_response <- httr::GET(url, user)
-  
+
   if(parameter_response$status_code == 200)
   {
     content <- jsonlite::fromJSON(httr::content(parameter_response, "text", encoding = 'UTF-8'))
+    data <- content$hits$hits$`_source`
+    dplyr::select(data,complaint_id,
+                  complaint=complaint_what_happened,submitted_via,
+                  product,sub_product,
+                  issue,sub_issue,
+                  company,company_response,company_public_response,
+                  date_sent_to_company,
+                  date_received,
+                  state,zipcode=zip_code)
   }
   else
   {
